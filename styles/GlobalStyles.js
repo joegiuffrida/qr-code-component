@@ -71,7 +71,7 @@ html {
   --color-white: ${COLORS.white};
   --color-lightGray: ${COLORS.lightGray};
   --color-grayishBlue: ${COLORS.grayishBlue};
-  --color-darkBlue: ${COLORS.darkBlue}
+  --color-darkBlue: ${COLORS.darkBlue};
  
 
   /*
@@ -82,6 +82,7 @@ html {
 
 html, body, #root {
   height: 100%;
+  background-color: var(--color-lightGray);
 }
 `;
 

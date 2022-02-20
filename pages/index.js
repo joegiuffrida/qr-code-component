@@ -6,12 +6,14 @@ export default function Home() {
   return (
     <Wrapper>
       <CardContainer>
-        <div>QR Box</div>
+        <CodeBox>
+          <img src="image-qr-code.png" />
+        </CodeBox>
         <Title>Improve your front-end skills by building projects</Title>
-        <p>
+        <Description>
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
-        </p>
+        </Description>
       </CardContainer>
     </Wrapper>
   );
@@ -22,19 +24,45 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--color-lightGray);
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 350px;
+  min-width: 240px;
   background-color: var(--color-white);
-  padding: 15px;
+  padding: 18px 0;
   height: fit-content;
+  border-radius: 15px;
+`;
+
+const CodeBox = styled.div`
+  display: flex;
+  width: 90%;
+
+  img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
 `;
 
 const Title = styled.h2`
   color: var(--color-darkBlue);
   font-size: 1.5rem;
   text-align: center;
-  padding: 10px 10px;
+  width: 90%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  line-height: 2rem;
+`;
+
+const Description = styled.p`
+  color: var(--color-grayishBlue);
+  width: 80%;
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 1.25rem;
 `;
