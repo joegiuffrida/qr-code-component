@@ -5,6 +5,13 @@ import styled from 'styled-components';
 export default function Home() {
   return (
     <Wrapper>
+      <Head>
+        <link
+          rel="shortcut icon"
+          href="favicon-32x32.png"
+          type="image/x-icon"
+        />
+      </Head>
       <CardContainer>
         <CodeBox>
           <img src="image-qr-code.png" />
